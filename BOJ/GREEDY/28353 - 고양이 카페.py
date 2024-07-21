@@ -9,6 +9,7 @@ Determine the maximum number of friends who can be happy.
 import sys
 from collections import deque
 
+
 # 1. TO GET THE INPUT
 
 cat_count, max_weight = map(int, sys.stdin.readline().split())
