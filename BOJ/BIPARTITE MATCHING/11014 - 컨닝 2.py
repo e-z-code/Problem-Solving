@@ -53,16 +53,16 @@ for test in range(test_count):
     for row_num in range(row_count):
         for col_num in range(col_count):
             
-            cell_num = col_count * row_num + col_num
-            graph[cell_num] = []
+            worker_num = col_count * row_num + col_num
+            graph[worker_num] = []
             
             if col_num % 2 == 1 and grid[row_num][col_num] == ".":
                 for idx in range(6):
                     new_row_num = row_num + dy[idx]
                     new_col_num = col_num + dx[idx]
                     if 0 <= new_row_num < row_count and 0 <= new_col_num < col_count and grid[new_row_num][new_col_num] == ".":
-                        new_cell_num = col_count * new_row_num + new_col_num
-                        graph[cell_num].append(new_cell_num)
+                        work_num = col_count * new_row_num + new_col_num
+                        graph[worker_num].append(work_num)
 
 
     # 4. TO SOLVE THE PROBLEM
