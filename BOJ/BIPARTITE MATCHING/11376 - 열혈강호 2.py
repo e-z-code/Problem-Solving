@@ -1,5 +1,5 @@
 '''
-BOJ 11375 - The Ruler of the Company  2 (https://www.acmicpc.net/problem/11375)
+BOJ 11376 - The Ruler of the Company 2 (https://www.acmicpc.net/problem/11376)
 
 There are N workers and M assignments.
 Each worker can do only one job. Each assignment should be assigned to a worker.
