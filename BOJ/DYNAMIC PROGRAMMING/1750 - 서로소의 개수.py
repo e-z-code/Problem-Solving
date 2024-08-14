@@ -18,6 +18,7 @@ for idx in range(arr_length):
 
 
 # 2. DYNAMIC PROGRAMMING
+# dp[i][j] = The number of pairs of which gcd is j when considered until index i
 
 dp = [[0 for common_divisor in range(100001)] for idx in range(arr_length)]
 

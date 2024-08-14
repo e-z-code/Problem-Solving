@@ -24,6 +24,7 @@ for interview in range(interview_count):
 
 
 # 2. TO SOLVE THE PROBLEM
+# dp[i][j] = The minimum amount of caffeine required when day i is j-th day of the sleeping cycle
 
 dp = [[inf for day_in_cycle in range(cycle_length + 1)] for day in range(101)]
 
