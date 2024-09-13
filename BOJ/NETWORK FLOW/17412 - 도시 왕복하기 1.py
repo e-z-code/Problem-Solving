@@ -25,6 +25,8 @@ for edge in range(edge_count):
     nodeA -= 1
     nodeB -= 1
 
+    # Connect both ways for possible negative flow
+    
     graph[nodeA][nodeB] = 1
     graph[nodeB][nodeA] = 1
     capacity[nodeA][nodeB] += 1
