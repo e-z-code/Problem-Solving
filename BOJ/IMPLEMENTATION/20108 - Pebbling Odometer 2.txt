@@ -1,0 +1,128 @@
+###
+BOJ 20108 - Pebbling Odometer 2 (https://www.acmicpc.net/problem/20108)
+
+Write a program that returns whether X <= Y.
+###
+
+jump checkX
+
+checkX:
+pebble deleteX
+right
+right
+move
+jump returnXendX
+
+deleteX:
+get
+right
+right
+move
+jump moveX
+
+moveX:
+put
+left
+move
+left
+move
+jump checkY
+
+returnXendX:
+pebble retrieveXendX
+left
+move
+right
+jump returnYendX
+
+retrieveXendX:
+get
+right
+right
+move
+put
+right
+right
+move
+jump returnXendX
+
+returnXendY:
+pebble retrieveXendY
+left
+move
+left
+move
+jump finish
+
+retrieveXendY:
+get
+right
+right
+move
+put
+right
+right
+move
+jump returnXendY
+
+checkY:
+pebble deleteY
+right
+right
+move
+jump returnYendY
+
+deleteY:
+get
+left
+left
+move
+jump moveY
+
+moveY:
+put
+right
+move
+right
+move
+jump checkX
+
+returnYendX:
+pebble retrieveYendX
+right
+move
+right
+move
+jump finish
+
+retrieveYendX:
+get
+left
+left
+move
+put
+right
+right
+move
+jump returnYendX
+
+returnYendY:
+pebble retrieveYendY
+right
+move
+left
+jump returnXendY
+
+retrieveYendY:
+get
+left
+left
+move
+put
+right
+right
+move
+jump returnYendY
+
+finish:
+halt
