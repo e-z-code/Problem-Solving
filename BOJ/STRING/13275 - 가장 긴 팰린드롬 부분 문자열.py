@@ -18,6 +18,7 @@ string = new_string
 
 
 # 2. MANACHER
+# manacher[idx] = The length of the longest palindrome pattern when idx is the center of the longest palindrome string
 
 max_palindrome_end = 0
 max_palindrome_center = 0
